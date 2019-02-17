@@ -46,11 +46,17 @@ class ArabicToRomanTests(unittest.TestCase):
     def test_number_19_is_XIX(self):
         self.assertEqual('XIX', arabic_to_roman(19))
 
-    def test_number_38_is_XIX(self):
+    def test_number_38_is_XXXVIII(self):
         self.assertEqual('XXXVIII', arabic_to_roman(38))
 
-    def test_number_84_is_XIX(self):
-        self.assertEqual('XXXXXXXXIV', arabic_to_roman(84))
+    def test_number_84_is_LXXXIV(self):
+        self.assertEqual('LXXXIV', arabic_to_roman(84))
 
-    def test_number_99_is_XIX(self):
-        self.assertEqual('XXXXXXXXXIX', arabic_to_roman(99))
+    def test_number_99_is_XCIX(self):
+        self.assertEqual('XCIX', arabic_to_roman(99))
+
+    def test_number_100_is_C(self):
+        self.assertEqual('C', arabic_to_roman(100))
+
+    def test_number_150_is_CL(self):
+        self.assertEqual('CL', arabic_to_roman(150))
