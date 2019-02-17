@@ -1,7 +1,7 @@
 def arabic_to_roman(number):
-    if number == 1:
-        return 'I'
-    if number == 2:
-        return 'II'
+    result_roman_number = ''
+    for i in range(number):
+        result_roman_number += 'I'
 
+    return result_roman_number
 
