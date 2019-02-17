@@ -15,3 +15,6 @@ class ArabicToRomanTests(unittest.TestCase):
 
     def test_number_3_is_III(self):
         self.assertEqual(arabic_to_roman(3), 'III')
+
+    def test_number_4_is_IV(self):
+        self.assertEqual(arabic_to_roman(4), 'IV')
