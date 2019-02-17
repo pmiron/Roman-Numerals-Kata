@@ -1,7 +1,10 @@
 def arabic_to_roman(number):
     remaining = number
     result_roman_number = ''
-    if remaining >= 5:
+    if remaining == 9:
+        result_roman_number = 'IX'
+        remaining -= 9
+    elif remaining >= 5:
         result_roman_number = 'V'
         remaining -= 5
     elif number == 4:

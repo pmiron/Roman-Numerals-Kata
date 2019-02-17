@@ -24,3 +24,12 @@ class ArabicToRomanTests(unittest.TestCase):
 
     def test_number_6_is_VI(self):
         self.assertEqual('VI', arabic_to_roman(6))
+
+    def test_number_7_is_VII(self):
+        self.assertEqual('VII', arabic_to_roman(7))
+
+    def test_number_8_is_VIII(self):
+        self.assertEqual('VIII', arabic_to_roman(8))
+
+    def test_number_9_is_IX(self):
+        self.assertEqual('IX', arabic_to_roman(9))
