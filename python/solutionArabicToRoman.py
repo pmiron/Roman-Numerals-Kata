@@ -1,14 +1,14 @@
 def arabic_to_roman(number):
+    remaining = number
     result_roman_number = ''
-    if number == 6:
-        result_roman_number = 'VI'
-    elif number == 5:
+    if remaining >= 5:
         result_roman_number = 'V'
+        remaining -= 5
     elif number == 4:
         result_roman_number = 'IV'
-    else:
-        for i in range(number):
-            result_roman_number += 'I'
+        remaining -= 4
+    for i in range(remaining):
+        result_roman_number += 'I'
 
     return result_roman_number
 
