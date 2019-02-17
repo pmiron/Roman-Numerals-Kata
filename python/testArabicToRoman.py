@@ -8,4 +8,7 @@ class ArabicToRomanTests(unittest.TestCase):
         self.assertEqual(arabic_to_roman(1), 'I')
 
     def test_number_2_is_not_I(self):
-        self.assertFalse(arabic_to_roman(2), 'I')
+        self.assertNotEqual(arabic_to_roman(2), 'I')
+
+    def test_number_2_is_II(self):
+        self.assertEqual(arabic_to_roman(2), 'II')
