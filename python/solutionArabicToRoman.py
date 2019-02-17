@@ -1,10 +1,16 @@
 def arabic_to_roman(number):
+
+    arabic_roman_mapping = {
+        9: 'IX',
+        5: 'V',
+        4: 'IV'
+    }
+
     remaining = number
     result_roman_number = ''
 
-    remaining, result_roman_number = append_roman_numerals(remaining, 9, 'IX', result_roman_number)
-    remaining, result_roman_number = append_roman_numerals(remaining, 5, 'V', result_roman_number)
-    remaining, result_roman_number = append_roman_numerals(remaining, 4, 'IV', result_roman_number)
+    for arabic, roman in arabic_roman_mapping.items():
+        remaining, result_roman_number = append_roman_numerals(remaining, arabic, roman, result_roman_number)
 
     for i in range(remaining):
         result_roman_number += 'I'
